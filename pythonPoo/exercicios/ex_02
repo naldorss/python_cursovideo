@@ -1,0 +1,28 @@
+# Declaração de classe
+class Gafanhoto: 
+    def __init__(self, nome = "", idade = 0): # Método construtor
+        # Atributos de instância
+        self.nome = nome
+        self.idade = idade
+
+    # Método de instância
+    def aniversario(self):
+        self.idade = self.idade + 1
+
+    def mensagem(self):
+        return f"{self.nome} é Gafanhoto(a) e tem {self.idade} anos de idade."
+    
+    # Declaração de objetos
+
+g1 = Gafanhoto(nome="Maria", idade=20) # Criando um objeto da classe Gafanhoto
+g1.aniversario() # Chamando o método aniversario para incrementar a idade
+print(g1.mensagem())
+
+g2 = Gafanhoto(nome="João", idade=20) # Criando um objeto da classe Gafanhoto
+g2.aniversario() # Chamando o método aniversario para incrementar a idade   
+print(g2.mensagem())
+
+
+g3 = Gafanhoto(nome="José", idade=20) # Criando um objeto da classe Gafanhoto
+g3.aniversario() # Chamando o método aniversario para incrementar a idade
+print(g3.mensagem())
